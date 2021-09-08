@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqtosql">
+  <DataContextMoniker Name="/linqtosqlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="30046adb-fcaf-43d5-aa95-ab3637a033ee" absoluteBounds="7.125, 1.875, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/linqtosqlDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a17f19e4-9b3b-4601-9148-a968037ac3e0" absoluteBounds="7.14, 2.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a35eec01-51de-481b-b338-6950eb848138" absoluteBounds="3.625, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/linqtosqlDataContext/UserActivit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="344b449f-505f-4e8c-afe6-d0491879deca" absoluteBounds="3.6399999999999997, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.125 : 2.13064697265625); (5.625 : 2.13064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqtosqlDataContext/User/User_UserActivit" />
+      <nodes>
+        <classShapeMoniker Id="30046adb-fcaf-43d5-aa95-ab3637a033ee" />
+        <classShapeMoniker Id="a35eec01-51de-481b-b338-6950eb848138" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9ec30cb3-ebda-4103-a0c7-8612f8afc5ff" absoluteBounds="1.375, 2.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/linqtosqlDataContext/UserFile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efb07f57-d26d-4485-9f92-c76236834914" absoluteBounds="1.3899999999999997, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.125 : 4.15550017447917); (2.375 : 4.15550017447917); (2.375 : 3.5112939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqtosqlDataContext/User/User_UserFile" />
+      <nodes>
+        <classShapeMoniker Id="30046adb-fcaf-43d5-aa95-ab3637a033ee" />
+        <classShapeMoniker Id="9ec30cb3-ebda-4103-a0c7-8612f8afc5ff" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

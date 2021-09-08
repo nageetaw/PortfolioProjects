@@ -1,0 +1,175 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#5271FF;
+}
+
+.active {
+  background-color: #5271FF;
+}
+.tablename{
+	margin-top:20px;
+	font-size:40px;
+  text-align:center;
+}
+ .labelname{
+  background-repeat:no-repeat;
+   width: 100%;
+}
+.options{
+	
+	padding:10px;
+   margin-left:80px;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #5271FF;
+}
+.li a:active{
+	background-color:#5271FF;
+	
+}
+.formdesign{
+	float:left;
+	padding: 30px;
+	
+}
+.radio_design{
+	padding:8px;
+    
+	
+}
+
+.btn{
+	background-color: #5271FF;
+	/* Blue */
+	color:#ec9521;
+	/*margin:20px;*/
+	margin-left:30px;
+	margin-top:0px;
+	width:30px;
+	height:30px;
+	text-decoration: none;
+	font-size:15px;
+	padding:20px;
+	
+	
+}
+.btn_label{
+    
+	font-size:20px;
+	
+}
+.ShowOnlyLeads{
+	
+	
+}
+.options input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+ 
+}
+
+.search-container {
+  text-align:center;
+  padding:190px;
+
+  
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+ .search-container button:hover {
+  background: #ccc;
+}
+
+.search-container-advanced {
+  text-align:center;
+   position:center;
+  
+}
+.import_btn{
+	
+	background-color: import_btn;
+	/* Blue */
+	border-radius: 2px;
+	color:white;
+	
+
+	height:40px;
+	width:100px;
+}
+#ImportFile{
+	
+	margin-left:25%;
+	
+}
+.btn:hover, .add_btn:hover, .import_btn:hover{
+	background-color:#5271FF;
+	
+}
+#t01 {
+  width: 100%;
+  background-color: #f1f1c1;
+}
+
+
+.th, .td {
+  padding: 15px;
+
+  width: auto;
+  
+}
+
+.Field{
+padding:8px;
+margin:8px;
+ 	
+}
+
+
+.footerstyle{
+
+background-color:black;
+color:grey;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+text-align: center;
+
+
+}
+p{
+	padding:20px;
+   text-align:center;
+	
+}

@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[User] (
+    [Id]             CHAR (10)   NOT NULL,
+    [FirstName]      NCHAR (30)  NOT NULL,
+    [LastName]       NCHAR (30)  NOT NULL,
+    [NewPassword]    NCHAR (30)  NOT NULL,
+    [AccountType]    NCHAR (20)  NOT NULL,
+    [EmailAddress]   NCHAR (50)  NOT NULL,
+    [DateOfBirth]    NCHAR (50)  NOT NULL,
+    [Gender]         NCHAR (10)  NOT NULL,
+    [QuestionNo]     INT         NOT NULL,
+    [Answer ]        NCHAR (100) NULL,
+    [ProfilePicture] TEXT        DEFAULT (NULL) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

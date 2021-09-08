@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FileProcessorDatabase" Class="linqtosqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FileProcessorDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="DataFilter.Properties.Settings" SettingsPropertyName="FileProcessorDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NewPassword" Type="System.String" DbType="NChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="AccountType" Type="System.String" DbType="NChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfBirth" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Answer ]" Member="Answer_" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="ProfilePicture" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="User_UserActivit" Member="UserActivits" ThisKey="Id" OtherKey="UserId" Type="UserActivit" />
+      <Association Name="User_UserFile" Member="UserFiles" ThisKey="Id" OtherKey="UserId" Type="UserFile" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserActivit" Member="UserActivits">
+    <Type Name="UserActivit">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Activity" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Association Name="User_UserActivit" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserFile" Member="UserFiles">
+    <Type Name="UserFile">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="TableName" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Association Name="User_UserFile" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
