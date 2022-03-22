@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scrimish</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="PILE_ONE_REQUEST_CODE">11</string>
+    <string name="PILE_TWO_REQUEST_CODE">12</string>
+    <string name="PILE_THREE_REQUEST_CODE">13</string>
+    <string name="PILE_FOUR_REQUEST_CODE">14</string>
+    <string name="PILE_FIVE_REQUEST_CODE">15</string>
+
+
+</resources>

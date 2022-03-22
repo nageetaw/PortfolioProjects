@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/favorite"
+        android:title="Voice"
+        android:enabled="false"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/voice"
+        android:title="@string/voice"
+        android:icon="@drawable/ic_baseline_toggle_on_24"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameDeskActivity">
+<!--    <FrameLayout-->
+<!--        android:id="@+id/showGameDetailsFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="0.1">-->
+
+<!--    </FrameLayout>-->
+    <FrameLayout
+        android:id="@+id/person_one_side"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="0.4">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/showCardFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/person_two_side"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+    </FrameLayout>
+
+</LinearLayout>

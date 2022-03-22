@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "320724109108",
+    "project_id": "foodbasket-f54e9",
+    "storage_bucket": "foodbasket-f54e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320724109108:android:220289a0653c64477b8761",
+        "android_client_info": {
+          "package_name": "com.example.first_flutter_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320724109108-38pvlngcq8co4de4qv2j8rstllihl9gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgouvPz_WudNBz6YCS1iGx-cRLvc_Gu4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320724109108-38pvlngcq8co4de4qv2j8rstllihl9gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

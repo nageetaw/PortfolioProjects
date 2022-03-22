@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hci">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/children"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/children"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HCI">
+        <activity
+            android:name=".stationaryScreen"
+            android:label="Stationary"
+            android:exported="true" />
+        <activity
+            android:name=".fruitactivity"
+            android:label="Fruits"
+            android:exported="true" />
+        <activity
+            android:name=".AnimalsActivity"
+            android:label="Animals"
+            android:exported="true" />
+        <activity
+            android:name=".CreateBitmojiScreen"
+            android:exported="true">
+
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- <data -->
+            <!-- android:host="the host of your redirect url" -->
+            <!-- android:path="the path of your redirect url" -->
+            <!-- android:scheme="the scheme of your redirect url" /> -->
+        </activity> <!-- <meta-data -->
+        <!-- android:name="com.snapchat.kit.sdk.clientId" -->
+        <!-- android:value="your app’s client id" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="com.snapchat.kit.sdk.redirectUrl" -->
+        <!-- android:value="the url that will handle login completion" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="com.snapchat.kit.sdk.scopes" -->
+        <!-- android:resource="@array/snap_kit_scopes" /> &lt;!&ndash; This should be a string array of scopes ! &ndash;&gt; -->
+        <activity
+            android:name=".Numbers"
+            android:label="Numbers"
+            android:exported="true" />
+        <activity
+            android:name=".SelectMediumScreen"
+            android:label="Home"
+            android:exported="true" />
+        <activity
+            android:name=".AboutScreen"
+            android:exported="true" />
+        <activity
+            android:name=".MainScreen"
+            android:label="Details"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Learn with Fun"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
